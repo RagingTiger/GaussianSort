@@ -35,12 +35,17 @@ in ascending order by standard deviation.
 
 
 ### Installation
-Installing the utility is simple, follow these steps:
+Installing the utility from the command line is simple, follow these steps:
 
 ```
 cd <location_you_want_to_clone_to>
 git clone https://github.com/RagingTiger/GaussianSort.git
 ```
+
+Or if you would prefer to simply download the repository as a zip file:
+<p align="center">
+  <img src="https://github.com/RagingTiger/images/blob/master/guasssort_download_button.png"/>
+</p>
 
 It is that simple and you're done!
 
