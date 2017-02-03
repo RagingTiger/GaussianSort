@@ -16,6 +16,7 @@ on its usage.
 ### Description
 The **gausssort** utility was designed to read in output files of the following
 format:
+
 ```
 #Tick Number: 0  #A_bacteria   #B_bacteria    #_bacteria
 1 9 20 29
@@ -29,6 +30,7 @@ format:
 9 25 134 159
 ...
 ```
+
 Specifically, this includes four entries separated by '&#32' characters
 (i.e space characters). **It is NOT currently generalized to work with other
 file types**.
@@ -42,10 +44,12 @@ in ascending order by standard deviation.
 
 ### Installation
 Installing the utility is simple, follow these steps:
+
 ```
 cd <location_you_want_to_clone_to>
 git clone https://github.com/RagingTiger/GaussianSort.git
 ```
+
 It is that simple and you're done!
 
 <br>
@@ -75,20 +79,25 @@ first word **gausssort** can be ignored, only the other 4 words need to be
 considered. The first of these words relates to the data
 A_bacteria, B_bacteria, and Total_bacteria stored in each file shown in the
 [Description](https://github.com/RagingTiger/GaussianSort#description) section:
+
 ```
 bact.a
 bact.b
 bact.total
 ```
+
 The next word '\<read_file_path\>' will be the path to the files you want to
 sort. For example, if I wanted to launch the utility and sort on the
 'A_bacteria' data in each of the files located in the '/home/gauss/data'
 directory:
+
 ```
 ./gausssort.py bact.a /home/gauss/data
 ```
+
 This usage will print to stdout the file names sorted with their
 'gaussian widths' (i.e. standard deviation) next to each name:
+
 ```
 1:   test-A_0_0.2_0.5_0.5_0.5_0.5.dat        2.62489899361
 
@@ -112,20 +121,26 @@ This usage will print to stdout the file names sorted with their
 
 ...
 ```
+
 <br>
+
 #### Advanced Usage: Saving to Output File
 
 A more advanced usage involves the **save** command:
+
 ```
 ./gausssort.py bact.a /home/gauss/data save
 ```
+
 This will run the utility and write the output to a file in the **GaussSort**
 directory. The output file will be named based on the date and time, and will
 therefore be a unique file and not in danger of being overwritten.
 
 Optionally, you can give a name to the output file:
+
 ```
 ./gausssort.py bact.a /home/gauss/data save list_of_gausssorted_filenames.txt
 ```
+
 This will of course save the output in the 'list_of_gausssorted_filenames.txt'
 file.
