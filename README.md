@@ -51,13 +51,19 @@ It is that simple and you're done!
 <br>
 
 ### Usage
-Using the utility is also simple, but there are several options to be aware
-of:
+Currently the utility is not setup to be installed as a global utility. To use
+it you must first 'cd' into the **GaussSort** directory:
+```
+cd GaussSort/
+```
+Once in the directory **GaussSort** the utility is simple use, but there are
+several options to be aware of:
 ```
 gausssort bact.a <read_file_path> [save [<write_file_path>]]
 gausssort bact.b <read_file_path> [save [<write_file_path>]]
 gausssort bact.total <read_file_path> [save [<write_file_path>]]
 ```
+
 <br>
 #### Basic Usage: Printing to Standard Out
 First, to clarify, this is the [docopt](http://docopt.org/) syntax and it is
