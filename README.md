@@ -5,11 +5,11 @@ on its usage.
 <br>
 
 ## Table of Contents
-- Description
-- Installation
-- Usage
-  + Basic
-  + Advanced
+- [Description](https://github.com/RagingTiger/GaussianSort#description)
+- [Installation](https://github.com/RagingTiger/GaussianSort#installation)
+- [Usage](https://github.com/RagingTiger/GaussianSort#usage)
+  + [Basic](https://github.com/RagingTiger/GaussianSort#basic-usage-printing-to-standard-out)
+  + [Advanced](https://github.com/RagingTiger/GaussianSort#advanced-usage-saving-to-output-file)
 
 <br>
 
