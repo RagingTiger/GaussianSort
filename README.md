@@ -44,7 +44,7 @@ git clone https://github.com/RagingTiger/GaussianSort.git
 
 Or if you would prefer to simply download the repository as a zip file:
 <p align="center">
-  <img src="https://github.com/RagingTiger/images/blob/master/guasssort_download_button.png"/>
+  <img src="https://github.com/RagingTiger/images/raw/master/guasssort_download_button.png"/>
 </p>
 
 Simply click on the 'green' **Clone or download** button.
