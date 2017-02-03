@@ -1,0 +1,109 @@
+# GaussianSort
+This repository hosts code for the **gausssort** utility, as well as a tutorial
+on its usage.
+
+<br>
+
+## Table of Contents
+- Description
+- Installation
+- Usage
+  + Basic
+  + Advanced
+
+<br>
+
+### Description
+The **gausssort** utility was designed read in output files of the following
+format:
+```
+#Tick Number: 0  #A_bacteria   #B_bacteria    #_bacteria
+```
+Specifically, this includes four entries separated by '&#32' characters
+(i.e space characters). **It is NOT currently generalized to work with other
+file types**.
+
+For each file it finds in the given path (see Usage section) it will read in
+the data, and calculate the standard deviation for that series of data. Once it
+has completed reading all the files it will return a list of file names sorted
+in ascending order by standard deviation.
+
+<br>
+
+### Installation
+Installing the utility is simple, follow these steps:
+```
+cd <location you want to clone to>
+git clone <github URL>
+```
+It is that simple and you're done!
+
+<br>
+
+### Usage
+Using the utility is also simple, but there are several options to be aware
+of:
+```
+gausssort bact.a <read_file_path> [save [<write_file_path>]]
+gausssort bact.b <read_file_path> [save [<write_file_path>]]
+gausssort bact.total <read_file_path> [save [<write_file_path>]]
+```
+<br>
+#### Basic Usage: Printing to Standard Out
+First, to clarify, this is the [docopt](http://docopt.org/) syntax and it is
+more simple than it appears. The first word **gausssort** can be ignored, only
+the other 4 words need be considered. The first of these words relates to the
+data in the files for A_bacteria, B_bacteria, and Total_bacteria:
+```
+bact.a
+bact.b
+bact.total
+```
+The next word '<read_file_path>' will be the path to the files you want to
+sort. For example, if I wanted to launch the utility and sort on the
+'A_bacteria' data in each of the files located in the '/home/gauss/data'
+directory:
+```
+./gausssort.py bact.a /home/gauss/data
+```
+This usage will print to stdout the file names sorted with their
+'gaussian widths' (i.e. standard deviation) next to each name:
+```
+1:   test-A_0_0.2_0.5_0.5_0.5_0.5.dat        2.62489899361
+
+2:   test-A_0_0.4_0.5_0.5_0.5_0.5.dat        2.62489899361
+
+3:   test-A_0_0.6_0.5_0.5_0.5_0.5.dat        2.62489899361
+
+4:   test-A_0_0.8_0.5_0.5_0.5_0.5.dat        2.62489899361
+
+5:   test-A_0_0_0.5_0.5_0.5_0.5.dat          2.62489899361
+
+6:   test-A_0_1_0.5_0.5_0.5_0.5.dat          2.62489899361
+
+7:   test-A_0.2_0.2_0.5_0.5_0.5_0.5.dat      3.03493910298
+
+8:   test-A_0.2_0.4_0.5_0.5_0.5_0.5.dat      3.03493910298
+
+9:   test-A_0.2_0.6_0.5_0.5_0.5_0.5.dat      3.03493910298
+
+10:  test-A_0.2_0.8_0.5_0.5_0.5_0.5.dat      3.03493910298
+
+...
+```
+<br>
+#### Advanced Usage: Saving to Output File
+
+A more advanced usage involves the **save** command:
+```
+./gausssort.py bact.a /home/gauss/data save
+```
+This will run the utility and write the output to a file in the **GaussSort**
+directory. The output file will be named based on the date and time, and will
+therefore be a unique file and not overwritten.
+
+Optionally, you can give the file name you would like the output file to have:
+```
+./gausssort.py bact.a /home/gauss/data save list_of_gausssorted_filenames.txt
+```
+This will of course save the output in 'list_of_gausssorted_filenames.txt' file.
