@@ -14,7 +14,7 @@ on its usage.
 <br>
 
 ### Description
-The **gausssort** utility was designed read in output files of the following
+The **gausssort** utility was designed to read in output files of the following
 format:
 ```
 #Tick Number: 0  #A_bacteria   #B_bacteria    #_bacteria
@@ -23,7 +23,7 @@ Specifically, this includes four entries separated by '&#32' characters
 (i.e space characters). **It is NOT currently generalized to work with other
 file types**.
 
-For each file it finds in the given path (see Usage section) it will read in
+For each file it finds in the given path (see [Usage](https://github.com/RagingTiger/GaussianSort#usage) section) it will read in
 the data, and calculate the standard deviation for that series of data. Once it
 has completed reading all the files it will return a list of file names sorted
 in ascending order by standard deviation.
@@ -33,8 +33,8 @@ in ascending order by standard deviation.
 ### Installation
 Installing the utility is simple, follow these steps:
 ```
-cd <location you want to clone to>
-git clone <github URL>
+cd <location_you_want_to_clone_to>
+git clone https://github.com/RagingTiger/GaussianSort.git
 ```
 It is that simple and you're done!
 
@@ -59,7 +59,7 @@ bact.a
 bact.b
 bact.total
 ```
-The next word '<read_file_path>' will be the path to the files you want to
+The next word '\<read_file_path\>' will be the path to the files you want to
 sort. For example, if I wanted to launch the utility and sort on the
 'A_bacteria' data in each of the files located in the '/home/gauss/data'
 directory:
@@ -106,4 +106,5 @@ Optionally, you can give the file name you would like the output file to have:
 ```
 ./gausssort.py bact.a /home/gauss/data save list_of_gausssorted_filenames.txt
 ```
-This will of course save the output in 'list_of_gausssorted_filenames.txt' file.
+This will of course save the output in the 'list_of_gausssorted_filenames.txt'
+file.
