@@ -56,20 +56,22 @@ it you must first 'cd' into the **GaussSort** directory:
 ```
 cd GaussSort/
 ```
-Once in the directory **GaussSort** the utility is simple use, but there are
+Once in the directory **GaussSort** the utility is simple to use, but there are
 several options to be aware of:
 ```
-gausssort bact.a <read_file_path> [save [<write_file_path>]]
-gausssort bact.b <read_file_path> [save [<write_file_path>]]
-gausssort bact.total <read_file_path> [save [<write_file_path>]]
+Usage:
+  gausssort bact.a <read_file_path> [save [<write_file_path>]]
+  gausssort bact.b <read_file_path> [save [<write_file_path>]]
+  gausssort bact.total <read_file_path> [save [<write_file_path>]]
 ```
 
 <br>
 #### Basic Usage: Printing to Standard Out
-First, to clarify, this is the [docopt](http://docopt.org/) syntax and it is
-more simple than it appears. The first word **gausssort** can be ignored, only
-the other 4 words need be considered. The first of these words relates to the
-data in the files for A_bacteria, B_bacteria, and Total_bacteria:
+First, to clarify, the above usage statement is written in the [docopt](http://docopt.org/) syntax and it is more simple than it appears. The
+first word **gausssort** can be ignored, only the other 4 words need to be
+considered. The first of these words relates to the data in the files for
+A_bacteria, B_bacteria, and Total_bacteria shown in the
+[Description](https://github.com/RagingTiger/GaussianSort#description) section:
 ```
 bact.a
 bact.b
@@ -116,9 +118,9 @@ A more advanced usage involves the **save** command:
 ```
 This will run the utility and write the output to a file in the **GaussSort**
 directory. The output file will be named based on the date and time, and will
-therefore be a unique file and not overwritten.
+therefore be a unique file and not in danger of being overwritten
 
-Optionally, you can give the file name you would like the output file to have:
+Optionally, you can give name for the output file:
 ```
 ./gausssort.py bact.a /home/gauss/data save list_of_gausssorted_filenames.txt
 ```
