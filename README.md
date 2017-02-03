@@ -73,7 +73,7 @@ Usage:
 ```
 
 <br>
-#### Basic Usage: Printing to Standard Out
+### Basic Usage: Printing to Standard Out
 First, to clarify, the above usage statement is written in the [docopt](http://docopt.org/) syntax and it is more simple than it appears. The
 first word **gausssort** can be ignored, only the other 4 words need to be
 considered. The first of these words relates to the data
@@ -124,7 +124,7 @@ This usage will print to stdout the file names sorted with their
 
 <br>
 
-#### Advanced Usage: Saving to Output File
+### Advanced Usage: Saving to Output File
 
 A more advanced usage involves the **save** command:
 
