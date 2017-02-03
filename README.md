@@ -5,7 +5,6 @@
   + [Basic](https://github.com/RagingTiger/GaussianSort#basic-usage-printing-to-standard-out)
   + [Advanced](https://github.com/RagingTiger/GaussianSort#advanced-usage-saving-to-output-file)
 
-<br>
 
 ### Description
 The **gausssort** utility was designed to read in output files of the following
@@ -34,7 +33,6 @@ the data, and calculate the standard deviation for that series of data. Once it
 has completed reading all the files it will return a list of file names sorted
 in ascending order by standard deviation.
 
-<br>
 
 ### Installation
 Installing the utility is simple, follow these steps:
@@ -46,7 +44,6 @@ git clone https://github.com/RagingTiger/GaussianSort.git
 
 It is that simple and you're done!
 
-<br>
 
 ### Usage
 Currently the utility is not setup to be installed as a global utility. To use
@@ -66,7 +63,6 @@ Usage:
   gausssort bact.total <read_file_path> [save [<write_file_path>]]
 ```
 
-<br>
 
 #### Basic Usage: Printing to Standard Out
 First, to clarify, the above usage statement is written in the [docopt](http://docopt.org/) syntax and it is more simple than it appears. The
@@ -117,7 +113,6 @@ This usage will print to stdout the file names sorted with their
 ...
 ```
 
-<br>
 
 #### Advanced Usage: Saving to Output File
 
