@@ -53,11 +53,14 @@ It is that simple and you're done!
 ### Usage
 Currently the utility is not setup to be installed as a global utility. To use
 it you must first 'cd' into the **GaussSort** directory:
+
 ```
 cd GaussSort/
 ```
+
 Once in the directory **GaussSort** the utility is simple to use, but there are
 several options to be aware of:
+
 ```
 Usage:
   gausssort bact.a <read_file_path> [save [<write_file_path>]]
