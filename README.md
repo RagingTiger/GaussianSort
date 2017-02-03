@@ -42,7 +42,7 @@ cd <location_you_want_to_clone_to>
 git clone https://github.com/RagingTiger/GaussianSort.git
 ```
 
-Or if you would prefer to simply download the repository as a zip file:
+Or if you would prefer to simply [download the repository as a zip file](https://github.com/RagingTiger/GaussianSort):
 <p align="center">
   <img src="https://github.com/RagingTiger/images/raw/master/guasssort_download_button.png"/>
 </p>
