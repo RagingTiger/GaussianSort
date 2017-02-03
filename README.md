@@ -69,8 +69,8 @@ Usage:
 #### Basic Usage: Printing to Standard Out
 First, to clarify, the above usage statement is written in the [docopt](http://docopt.org/) syntax and it is more simple than it appears. The
 first word **gausssort** can be ignored, only the other 4 words need to be
-considered. The first of these words relates to the data in the files for
-A_bacteria, B_bacteria, and Total_bacteria shown in the
+considered. The first of these words relates to the data
+A_bacteria, B_bacteria, and Total_bacteria stored in each file shown in the
 [Description](https://github.com/RagingTiger/GaussianSort#description) section:
 ```
 bact.a
@@ -118,9 +118,9 @@ A more advanced usage involves the **save** command:
 ```
 This will run the utility and write the output to a file in the **GaussSort**
 directory. The output file will be named based on the date and time, and will
-therefore be a unique file and not in danger of being overwritten
+therefore be a unique file and not in danger of being overwritten.
 
-Optionally, you can give name for the output file:
+Optionally, you can give a name to the output file:
 ```
 ./gausssort.py bact.a /home/gauss/data save list_of_gausssorted_filenames.txt
 ```
