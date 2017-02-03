@@ -1,9 +1,3 @@
-# GaussianSort
-This repository hosts code for the **gausssort** utility, as well as a tutorial
-on its usage.
-
-<br>
-
 ## Table of Contents
 - [Description](https://github.com/RagingTiger/GaussianSort#description)
 - [Installation](https://github.com/RagingTiger/GaussianSort#installation)
