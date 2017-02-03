@@ -18,6 +18,16 @@ The **gausssort** utility was designed to read in output files of the following
 format:
 ```
 #Tick Number: 0  #A_bacteria   #B_bacteria    #_bacteria
+1 9 20 29
+2 11 21 32
+3 11 30 41
+4 11 39 50
+5 13 48 61
+6 16 65 81
+7 18 80 98
+8 21 102 123
+9 25 134 159
+...
 ```
 Specifically, this includes four entries separated by '&#32' characters
 (i.e space characters). **It is NOT currently generalized to work with other
