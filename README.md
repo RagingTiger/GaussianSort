@@ -47,7 +47,7 @@ Or if you would prefer to simply download the repository as a zip file:
   <img src="https://github.com/RagingTiger/images/blob/master/guasssort_download_button.png"/>
 </p>
 
-It is that simple and you're done!
+Simply click on the 'green' **Clone or download** button.
 
 
 ### Usage
