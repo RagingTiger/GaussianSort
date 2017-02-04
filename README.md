@@ -72,9 +72,10 @@ Usage:
 #### Basic Usage: Printing to Standard Out
 First, to clarify, the above usage statement is written in the [docopt](http://docopt.org/) syntax and it is more simple than it appears. The
 first word **gausssort** can be ignored, only the other 4 words need to be
-considered. The first of these words relates to the data
-A_bacteria, B_bacteria, and Total_bacteria stored in each file shown in the
-[Description](https://github.com/RagingTiger/GaussianSort#description) section:
+considered. The first of these words is a subcommand specifying which column of
+data (i.e. #A_bacteria, #B_bacteria, #\_bacteria stored in each file shown in
+the [Description](https://github.com/RagingTiger/GaussianSort#description)
+section) to calculate the standard deviation on:
 
 ```
 bact.a
@@ -84,7 +85,7 @@ bact.total
 
 The next word '\<read_file_path\>' will be the path to the files you want to
 sort. For example, if I wanted to launch the utility and sort on the
-'A_bacteria' data in each of the files located in the '/home/gauss/data'
+'#A_bacteria' data in each of the files located in the '/home/gauss/data'
 directory:
 
 ```
