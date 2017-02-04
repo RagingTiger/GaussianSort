@@ -71,7 +71,7 @@ Usage:
 
 #### Basic Usage: Printing to Standard Out
 First, to clarify, the above usage statement is written in the [docopt](http://docopt.org/) syntax and it is more simple than it appears. The
-first word **gausssort** can be ignored, only the other 4 words need to be
+first word **gausssort** can be ignored, only the other four words need to be
 considered. The first of these words is a subcommand specifying which column of
 data (i.e. #A_bacteria, #B_bacteria, #\_bacteria stored in each file shown in
 the [Description](https://github.com/RagingTiger/GaussianSort#description)
