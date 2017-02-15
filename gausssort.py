@@ -19,12 +19,15 @@ import os
 import datetime
 import statistics
 
+
 # functions
 def comp_structs(struct):
     return struct.gwidth
 
+
 def print_data(data):
     print data
+
 
 # classes
 class GaussStruct(object):
@@ -41,6 +44,7 @@ class GaussStruct(object):
         return '{0} {1}: object at {2}'.format(self.filename,
                                                self.gwidth,
                                                id(self))
+
 
 class GaussSort(object):
     '''
@@ -100,7 +104,6 @@ class GaussSort(object):
                                                entry.gwidth)
             func(line)
 
-
     def _write_data(self, data):
         '''
         Private method to print out data in GaussStructs
@@ -128,7 +131,6 @@ class GaussSort(object):
             dlen = len(str(len(data)))
             self._data_string(dlen, data)
 
-
     def gaussian_sort(self, index):
         '''
         Method to sort data files based on gaussian width (from small to large)
@@ -141,7 +143,11 @@ class GaussSort(object):
 
         # get data
         for name in self.file_list:
-            gauss_widths.append(self._gaussian_width(name))
+            # check if hidden file
+            if name.split('.')[0] == '':
+                continue
+            else:
+                gauss_widths.append(self._gaussian_width(name))
 
         # sort widths
         self._output_data(sorted(gauss_widths, key=comp_structs))
