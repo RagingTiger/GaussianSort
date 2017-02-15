@@ -16,6 +16,7 @@ Usage:
 
 # libraries
 import os
+import sys
 import datetime
 import statistics
 
@@ -62,7 +63,12 @@ class GaussSort(object):
         self.save = save
         self.writepath = writepath
         self.readfilepath = pathtofiles + char
-        self.file_list = os.listdir(self.readfilepath)
+
+        # get list of files from dir
+        try:
+            self.file_list = os.listdir(self.readfilepath)
+        except OSError:
+            sys.exit('Must provide directory path as an argument')
 
         # store dict of commands
         self.cmd = {1: 'bact.a', 2: 'bact.b', 3: 'bact.total'}
