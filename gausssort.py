@@ -85,8 +85,12 @@ class GaussSort(object):
                 # strip and split line
                 dlist = line.strip('\n').split(' ')
 
-                # gen key and val
-                data_list.append(int(dlist[self.index]))
+                # attempt conversion
+                try:
+                    # add data after converting to int
+                    data_list.append(int(dlist[self.index]))
+                except ValueError:
+                    print 'Format unsupported in file: {0}'.format(datafile)
 
             # calculate stdev
             stdev = statistics.stdev(data_list)
